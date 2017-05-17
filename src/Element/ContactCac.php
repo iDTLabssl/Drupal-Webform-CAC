@@ -21,6 +21,16 @@ class ContactCac extends WebformContact {
       '#type' => 'date',
       '#title' => t('Date of Birth'),
     ];
+    $elements['gender'] = [
+      '#type' => 'select',
+      '#title' => t('Gender'),
+      '#options' => 'gender',
+    ];
+    $elements['nationality'] = [
+      '#type' => 'select',
+      '#title' => t('Nationality'),
+      '#options' => 'country_names',
+    ];
     $elements['shares'] = [
       '#type' => 'number',
       '#title' => t('Shares %'),
